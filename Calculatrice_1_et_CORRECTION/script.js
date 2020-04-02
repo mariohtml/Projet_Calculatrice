@@ -18,7 +18,9 @@ function calcResult() {
         var ope2 = monResult.substr(monResult.indexOf("/") + 1)
         // On calcule
         document.getElementById("result").value = "" + ((+ope1) / (+ope2))
+		
     }
+	
     else {
         // Il n'y a pas de symbole / je cherche le symbole *
         if (monResult.indexOf("*") >= 0) {
@@ -93,7 +95,7 @@ function afficher(caracteres) {
  }
 
 function fonction_speciale(fonction) {
-   if (ajouter(window.document.index.afficher.value)) {
+   if (afficher(window.document.index.afficher.innerHTML)) {
      if(fonction == "sqrt") {
        var x = 0;
      x = eval(window.document.index.afficher.value);
@@ -101,7 +103,7 @@ function fonction_speciale(fonction) {
    }
    alert(fonction_speciale)
    if(fonction == "pow") {
-     var x = 0;
+     var x = 2;
      x = eval(window.document.index.afficher.value);
      window.document.index.afficher.value = x * x;
    }
