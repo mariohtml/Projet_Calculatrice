@@ -1,3 +1,3 @@
 function ajouter(monChiffre) {
-    document.getElementById("result").innerHTML += monChiffre;
+    document.getElementById("result").value += monChiffre;
 }
