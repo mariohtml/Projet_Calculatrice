@@ -87,24 +87,28 @@ function ajouteSymbole(monSymbole) {
 
 
 
-
+function afficher(caracteres) {
+   window.document.index.afficher.value =
+   window.document.index.afficher.value + caracteres;
+ }
 
 function fonction_speciale(fonction) {
-   if (verification(window.document.index.affiche.value)) {
+   if (ajouter(window.document.index.afficher.value)) {
      if(fonction == "sqrt") {
        var x = 0;
-     x = eval(window.document.index.affiche.value);
-     window.document.index.affiche.value = Math.sqrt(x);
+     x = eval(window.document.index.afficher.value);
+     window.document.index.afficher.value = Math.sqrt(x);
    }
+   alert(fonction_speciale)
    if(fonction == "pow") {
      var x = 0;
-     x = eval(window.document.index.affiche.value);
-     window.document.index.affiche.value = x * x;
+     x = eval(window.document.index.afficher.value);
+     window.document.index.afficher.value = x * x;
    }
    if(fonction == "log") {
      var x = 0;
-     x = eval(window.document.index.affiche.value);
-     window.document.index.affiche.value = Math.log(x);
+     x = eval(window.document.index.afficher.value);
+     window.document.index.afficher.value = Math.log(x);
    }
-  } else window.document.index.affiche.value = 0
+  } else window.document.index.afficher.value = 0
 }
