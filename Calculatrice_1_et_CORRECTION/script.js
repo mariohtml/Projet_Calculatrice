@@ -88,14 +88,14 @@ function ajouteSymbole(monSymbole) {
 */
 
 
-
+/*
 function afficher(caracteres) {
    window.document.index.afficher.value =
    window.document.index.afficher.value + caracteres;
  }
 
 function fonction_speciale(fonction) {
-   if (afficher(window.document.index.afficher.innerHTML)) {
+   if (afficher(window.document.index.afficher.value)) {
      if(fonction == "sqrt") {
        var x = 0;
      x = eval(window.document.index.afficher.value);
@@ -114,3 +114,5 @@ function fonction_speciale(fonction) {
    }
   } else window.document.index.afficher.value = 0
 }
+
+*/
